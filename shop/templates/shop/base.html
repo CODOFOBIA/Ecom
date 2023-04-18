@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    {% load static %}
+ 
+    <link rel="stylesheet" href="{% static 'shop/base.css' %}">
+    {% block additionalcss %} {% endblock %}
+    
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="brand">Ecom</li>
+                <li>About</li>
+                <li>Login</li>
+                <input type="search" id="search_bar" placeholder="Search for products and items">
+                <i class="fa-solid fa-cart-shopping"> </i>
+                <i class="fa-regular fa-user"> </i>
+            </ul>
+        </nav>
+    </header>
+    {% block body %} {% endblock %}
+    
+    <script src="https://kit.fontawesome.com/82be59cdc5.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

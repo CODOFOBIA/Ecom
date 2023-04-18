@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+h1{
+    margin: 5px 105px;
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.carousel-container{
+    height: 450px;
+    width: 1400px;
+    /* border: 2px solid black; */
+    position: relative;
+    left: 95px;
+    /* overflow-x: auto; */
+    overflow-x: hidden;
+}
+
+.carousel-wrapper{
+    /* border: 2px solid red; */
+    width: 1400px;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    align-items: center;
+    transition: all 2s ease;
+}
+
+.carousel-slide{
+    height: 450px;
+    width: 1400px;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* .carousel:hover{
+    transform: translateX(-50%);
+} */
+
+.image{
+    width: 250px;
+    height: 250px;
+    /* background-color: green; */
+}
+
+.card{
+    margin: 0 5px;
+}
+
+.card-body{
+    background-color: rgb(223, 223, 223);
+    height: 400px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 249px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
+}
+
+.desc{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 15px;
+    /* font-size: 0.5em; */
+}
+
+.button{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 25px;
+    
+}
+
+.btn-info{
+    background-color: green;
+    margin-top: 12px;
+    width: 70px;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: black;
+    /* font-size: small; */
+}
+.btn-cart{
+    background-color: green;
+    margin-top: 12px;
+    width: 81px;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: black;
+    /* font-size: small; */
+    margin-left: 40px;
+}
+
+.fa-angle-right{
+    float: right;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.fa-angle-left{
+    cursor: pointer;
+}
+
+.slider-navigator{
+    margin-left: 20px;
+    position: relative;
+    bottom: 200px;
+    /* height: 20px; */
+    font-size: 1.2rem;
+    /* background-color: bl; */
+}
