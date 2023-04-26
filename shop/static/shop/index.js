@@ -17,10 +17,12 @@ wrappers.forEach((wrap) =>{
 
 // Sliding the carousel
 let slideRight = function(){
-    slideIndex--;
-    let Position = 1400 * slideIndex;
-    wrappers.forEach(wrap =>{
-        wrap.style.transform = "translateX(" + Position + "px)"
+    wrappers.foreach(wrap => {
+        let nslides = wrap.children.length;
+        slideIndex = nslides - 1;
+        for(i in slideIndex){
+            console.log(i)
+        }
     })
 }
 
