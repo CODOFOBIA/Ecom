@@ -5,7 +5,7 @@ let wrappers = Array.from(document.getElementsByClassName('carousel-wrapper'));
 let slides = [...document.getElementsByClassName('carousel-slide')];
 // let cards = [...document.getElementsByClassName('card')];
 
-let slideIndex = 0;
+
 
 wrappers.forEach((wrap) =>{
     let nSlides = wrap.children.length;
@@ -17,37 +17,41 @@ wrappers.forEach((wrap) =>{
 
 // Sliding the carousel
 let slideRight = function(){
-    wrappers.foreach(wrap => {
-        let nslides = wrap.children.length;
-        slideIndex = nslides - 1;
-        for(i in slideIndex){
-            console.log(i)
-        }
+    wrappers.forEach(wrap =>{
+        let slideIndex = 0;
+        slideIndex--;
+        Position = slideIndex * 1400
+        wrap.style.tansform = "translateX(" + -Position + "px)";
     })
 }
 
 let slideLeft = function(){
-    slideIndex++;
-    let Position = 1400 * slideIndex;
     wrappers.forEach(wrap =>{
-        wrap.style.transform = "translateX(" + Position + "px)"
+        // let slides = [...document.getElementsByClassName('carousel-slide')];
+        let slideIndex = 0;
+        slideIndex++;
+        Position = slideIndex * 1400
+        wrap.style.tansform = "translateX(" + -Position + "px)";
     })
 }
 
 arrow_left.forEach(left =>{
     if(slideIndex == 0){
-        left.removeEventListener('click', slideRight)
+        left.removeEventListener('click', slideRight);
     }
     else if(slideIndex > 0){
-        left.addEventListener('click', slideRight)
+        left.addEventListener('click', slideRight);
     }  
 })
 
 arrow_right.forEach(right =>{
     if(slideIndex == slides.length -1){
-        right.removeEventListener('click', slideLeft)
+        right.removeEventListener('click', slideLeft);
     }
     else if(slideIndex < slides.length -1){
-        right.addEventListener('click', slideLeft)
+        right.addEventListener('click', slideLeft);
+        console.log("clicked");
     }   
 })
+arrow_left.addEventListener('click', slideRight);
+arrow_right.addEventListener('click', slideLeft);
