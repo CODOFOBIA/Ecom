@@ -1,57 +1,13 @@
-// variable initialization
-let arrow_left = [...document.getElementsByClassName('carousel-control-prev')];
-let arrow_right = [...document.getElementsByClassName('carousel-control-next')];
-let wrappers = Array.from(document.getElementsByClassName('carousel-wrapper'));
-let slides = [...document.getElementsByClassName('carousel-slide')];
-// let cards = [...document.getElementsByClassName('card')];
+const wrapper = document.querySelector('.carousel-wrapper');
+const slides = Array.from(wrapper.children);
 
 
 
-wrappers.forEach((wrap) =>{
-    let nSlides = wrap.children.length;
-    // console.log(nSlides);
-    let wrapper_len = 1400 * nSlides;
-    wrap.style.width = wrapper_len + "px";
-})
 
 
-// Sliding the carousel
-let slideRight = function(){
-    wrappers.forEach(wrap =>{
-        let slideIndex = 0;
-        slideIndex--;
-        Position = slideIndex * 1400
-        wrap.style.tansform = "translateX(" + -Position + "px)";
-    })
-}
+//set the width of the wrapper 
+// wrapper.style.width = 1400 * slides.length + 'px'
 
-let slideLeft = function(){
-    wrappers.forEach(wrap =>{
-        // let slides = [...document.getElementsByClassName('carousel-slide')];
-        let slideIndex = 0;
-        slideIndex++;
-        Position = slideIndex * 1400
-        wrap.style.tansform = "translateX(" + -Position + "px)";
-    })
-}
-
-arrow_left.forEach(left =>{
-    if(slideIndex == 0){
-        left.removeEventListener('click', slideRight);
-    }
-    else if(slideIndex > 0){
-        left.addEventListener('click', slideRight);
-    }  
-})
-
-arrow_right.forEach(right =>{
-    if(slideIndex == slides.length -1){
-        right.removeEventListener('click', slideLeft);
-    }
-    else if(slideIndex < slides.length -1){
-        right.addEventListener('click', slideLeft);
-        console.log("clicked");
-    }   
-})
-arrow_left.addEventListener('click', slideRight);
-arrow_right.addEventListener('click', slideLeft);
+//when left button is clicked move carousel to the left
+//when right button is cicked move carousel to the right
+//when multiple carousel target each arrows and move their respective carousel to the respective direction

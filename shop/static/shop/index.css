@@ -11,13 +11,15 @@ h1{
 }
 
 .carousel-container{
-    height: 450px;
-    width: 1400px;
+    height: 426px;
+    width: 1430px;
     /* border: 2px solid black; */
     position: relative;
     left: 95px;
-    /* overflow-x: auto; */
-    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
 .carousel-wrapper{
@@ -39,10 +41,6 @@ h1{
     justify-content: flex-start;
     align-items: center;
 }
-
-/* .carousel:hover{
-    transform: translateX(-50%);
-} */
 
 .image{
     width: 250px;
@@ -84,7 +82,6 @@ h3{
     font-size: 15px;
     position: relative;
     top: 15px;
-    /* font-size: 0.5em; */
 }
 
 .button{
@@ -107,7 +104,6 @@ h3{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     color: black;
-    /* font-size: small; */
 }
 .btn-cart{
     background-color: green;
@@ -119,25 +115,22 @@ h3{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     color: black;
-    /* font-size: small; */
     margin-left: 40px;
 }
 
-.fa-angle-right{
-    float: right;
-    margin-right: 12px;
+.carousel-control-prev{
     cursor: pointer;
-}
-
-.fa-angle-left{
-    cursor: pointer;
-}
-
-.slider-navigator{
-    margin-left: 20px;
     position: relative;
-    bottom: 200px;
-    /* height: 20px; */
-    font-size: 1.2rem;
-    /* background-color: bl; */
+    left: -705px;
+    z-index: 1;
+}
+
+.carousel-control-next{
+    position: relative;
+    right: -705px;
+    cursor: pointer;
+}
+
+.is-hidden{
+    display: none;
 }
