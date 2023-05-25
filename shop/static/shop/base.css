@@ -40,11 +40,18 @@ nav ul li{
     font-weight: bolder;
     font-size: 1.3rem;
 }
+
+.nav_elements{
+    color: white;
+    text-decoration: none;
+}
+
 nav ul #search_bar{
     width: 460px;
     height: 30px;
     border: none;
-    margin-left: 280px;
+    position: relative;
+    left: 225px;
     padding: 0 26px;
     border-radius: 15px;
     font-family: 'Varela Round', sans-serif;
@@ -52,5 +59,10 @@ nav ul #search_bar{
 }
 
 nav ul i{
-    margin-left: 10px;
+    position: relative;
+    left: 710px;
+}
+
+nav ul i.fa-user{
+    margin-left: 20px;
 }

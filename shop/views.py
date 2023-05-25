@@ -13,7 +13,10 @@ def index(request):
 def cart(request):
     return HttpResponse( "Hello, world. You're at the cart index.")
 
-def details(request):
+def checkout(request):
+    return HttpResponse( "Hello, world. You're at the details index.")
+
+def product_details(request):
     return HttpResponse( "Hello, world. You're at the details index.")
 
 def payment(request):
