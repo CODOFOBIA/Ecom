@@ -4,60 +4,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-h1{
-    margin: 5px 105px;
-    font-family: 'Quicksand', sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
-}
 
-.carousel-container{
-    height: 426px;
-    width: 1430px;
+
+.product_container{
+    margin-top: 60px;
+    height: auto;
+    width: 1335px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     /* border: 2px solid black; */
+    flex-wrap: wrap;
     position: relative;
-    left: 95px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-}
-
-.carousel-wrapper{
-    /* border: 2px solid red; */
-    width: 1400px;
-    height: 450px;
-    display: flex;
-    justify-content: flex-start;
-    position: absolute;
-    align-items: center;
-    transition: all 2s ease;
-}
-
-.carousel-slide{
-    height: 450px;
-    width: 1400px;
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    left: 180px;
 }
 
 .image{
     width: 250px;
     height: 250px;
-    /* background-color: green; */
 }
 
 .card{
-    margin: 0 5px;
+    margin:   5px 0 7px 15px;
 }
 
 .card-body{
-    background-color: rgb(223, 223, 223);
-    height: 400px;
-    width: 250px;
+    background-color: white;
+    height: 357px;
+    width: 273px;
     padding: 10px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +43,7 @@ img{
     width: 249px;
     height: 225px;
     object-fit: cover;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 h3{
@@ -85,7 +61,6 @@ h3{
 }
 
 .button{
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,7 +70,8 @@ h3{
 }
 
 .btn-info{
-    background-color: green;
+    /* background-color: rgb(55, 135, 238); */
+    border: 2px solid rgb(55, 135, 238);
     margin-top: 12px;
     width: 70px;
     padding: 15px;
@@ -104,9 +80,11 @@ h3{
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     color: black;
+    transition: all 0.3s ease;
 }
 .btn-cart{
-    background-color: green;
+    /* background-color: rgb(55, 135, 238); */
+    border: 2px solid rgb(55, 135, 238);
     margin-top: 12px;
     width: 81px;
     padding: 15px;
@@ -116,21 +94,12 @@ h3{
     font-size: 16px;
     color: black;
     margin-left: 40px;
+    transition: all 0.3s ease;
 }
 
-.carousel-control-prev{
-    cursor: pointer;
-    position: relative;
-    left: -705px;
-    z-index: 1;
+.btn-cart:hover{
+    background-color: rgb(55, 135, 238);
 }
-
-.carousel-control-next{
-    position: relative;
-    right: -705px;
-    cursor: pointer;
-}
-
-.is-hidden{
-    display: none;
+.btn-info:hover{
+    background-color: rgb(55, 135, 238);
 }

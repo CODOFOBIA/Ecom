@@ -7,13 +7,7 @@ from math import ceil
 
 def index(request):
     products = Product.objects.all()
-    
-    n = len(products)
-    nSlides = ceil(n/5)
-    # context = {'products': products, "slides": nSlides, "range": range(1, nSlides)}
-    allProds = [[products, range(1, nSlides), nSlides], 
-                [products, range(1, nSlides), nSlides]]
-    context = {'allProds': allProds}
+    context = {"product":products}
     return render(request, 'shop/index.html', context)
 
 def cart(request):

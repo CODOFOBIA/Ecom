@@ -4,7 +4,10 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(223, 223, 223);
 }
 
 nav{
@@ -13,7 +16,7 @@ nav{
 }
 
 #navbar{
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;

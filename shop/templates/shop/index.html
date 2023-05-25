@@ -10,147 +10,23 @@
 
 {% block body %}
 <!-- slideShow starts here-->
-<h1>Category name</h1>
-<div class="carousel-container">
-    <i class="fa-solid fa-angle-left carousel-control-prev"> </i>
-    <div class="carousel-wrapper">
-        <div class="carousel-slide active">
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
+<div class="product_container">
+{% for i in product %}
+    <div class="card">
+        <div class="card-body">
+            <div class="image">
+                <img src="/media/{{i.product_image}}" alt="image">
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
+            <h3>{{i.product_name}}</h3>
+            <div class="button">
+                <a href="#" class="btn-info">more info</a>
+                <a href="#" class="btn-cart">add to cart</a>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <div class="carousel-slide">
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="image">
-                        <img src="{% static 'shop/fruits.jpg' %}" alt="image">
-                    </div>
-                    <h3>Name</h3>
-                    <p class="desc">lorem ipsum dollor cout tinho</p>
-                    <div class="button">
-                        <a href="#" class="btn-info">more info</a>
-                        <a href="#" class="btn-cart">add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
+        </div>
     </div>
-    <i class="fa-solid fa-angle-right carousel-control-next"> </i>
+{% endfor %}
 </div>
-
 <script src="{% static 'shop/index.js' %}"> </script>
 {% endblock %}
+
+
