@@ -61,6 +61,7 @@ h3{
 }
 
 .button{
+    width: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,8 +70,7 @@ h3{
     
 }
 
-.btn-info{
-    /* background-color: rgb(55, 135, 238); */
+/* .btn-info{
     border: 2px solid rgb(55, 135, 238);
     margin-top: 12px;
     width: 70px;
@@ -83,7 +83,6 @@ h3{
     transition: all 0.3s ease;
 }
 .btn-cart{
-    /* background-color: rgb(55, 135, 238); */
     border: 2px solid rgb(55, 135, 238);
     margin-top: 12px;
     width: 81px;
@@ -95,11 +94,22 @@ h3{
     color: black;
     margin-left: 40px;
     transition: all 0.3s ease;
+} */
+
+.btn{
+    height: 50px;
+    width: 105px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid rgb(55, 135, 238);
+    transition: all 0.3s ease;
 }
 
-.btn-cart:hover{
+.btn:hover{
     background-color: rgb(55, 135, 238);
 }
-.btn-info:hover{
+/* .btn-info:hover{
     background-color: rgb(55, 135, 238);
-}
+} */
