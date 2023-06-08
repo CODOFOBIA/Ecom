@@ -109,6 +109,7 @@ h3{
 
 .btn:hover{
     background-color: rgb(55, 135, 238);
+    cursor: pointer;
 }
 /* .btn-info:hover{
     background-color: rgb(55, 135, 238);

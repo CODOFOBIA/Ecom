@@ -11,7 +11,7 @@ def index(request):
     return render(request, 'shop/index.html', context)
 
 def cart(request):
-    return HttpResponse( "Hello, world. You're at the cart index.")
+    return render(request, 'shop/cart.html')
 
 def checkout(request):
     return HttpResponse( "Hello, world. You're at the details index.")
