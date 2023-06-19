@@ -1,5 +1,30 @@
+.cart-container{
+    position: relative;
+    top: 72px;
+    left: 165px;
+    height: 715px;
+    width: 930px;
+    /* background-color: red; */
+}
+
 .cart-items{
+    /* background-color: green; */
     height: 100px;
-    width: 50px;
-    background-color: red;
+    width: auto;
+    margin: 6px 0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 98px;
+    height: 98px;
+    object-fit: cover;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid rgb(34, 33, 33);
 }

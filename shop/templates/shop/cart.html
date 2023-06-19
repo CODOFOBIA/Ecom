@@ -2,15 +2,35 @@
 {% block title %}Ecom | Cart{% endblock %}
 
 
-{% block additionalcss %} 
+{% block additionalcss %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'shop/cart.css' %}">
 {% endblock %}
 
 {% block body %}
-
-<div class="cart-items">
-    
+<div class="cart-container">
+    <hr>
+    <div class="cart-items">
+        <div class="product_image">
+            <img src="{% static 'shop/fruits.jpg' %}" alt="image">
+        </div>
+        <div>
+            <i class="fa-solid fa-minus"></i>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <p>Price: </p>
+    </div>
+    <hr>
+    <div class="cart-items">
+        <div class="product_image">
+            <img src="{% static 'shop/fruits.jpg' %}" alt="image">
+        </div>
+        <div>
+            <i class="fa-solid fa-minus"></i>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <p>Price: </p>
+    </div>
+    <hr>
 </div>
-
 {% endblock %}
